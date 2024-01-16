@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MK COLLECTION</title>
+    <link  href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+
+<style>
+
+    *{
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+    }
+    
+
+    nav{
+        display: flex;
+        padding: 2% 6%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav img{
+        width: 150px;
+    }
+    .nav-links{
+         flex: 1;
+         text-align: right;
+    }
+    .nav-links ul li{
+
+        list-style: none;
+        display: inline-block;
+        padding: 8px 12px;
+        position: relative;
+        
+
+    }
+    .nav-links ul li a{
+        color: #fff;
+        text-decoration: none;
+         font-size: 17px;
+    }
+body{
+    background-image: url(image/pexels1-allec-gomes-8805352.jpg);
+    background-size:cover ;
+}
+   
+    .nav-links ul li::after{
+
+        content: '';
+        width: 0%;
+        height: 2px;
+        background: #c7bdbd49;
+        display: block;
+        margin: auto;
+        transition: 0.5s;
+    }
+    .nav-links ul li:hover::after{
+        width: 100%;
+    }
+    .text-box{
+        width: 90%;
+        color: #fff;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        text-align: center;
+    }
+
+    .text-box h1{
+        font-size: 52px;
+    }
+    .text-box p{
+        margin: 10px 0 40px;
+        font-size: 14px;
+        color: #fff;
+    }
+
+    .hero-btn{
+        display: inline-block ;
+        text-decoration: none;
+        color: #fff;
+        border: 1px solid #fff;
+        padding: 12px 34px;
+        font-size: 13px;
+        background: transparent;
+        position: relative;
+        cursor: pointer;
+    }
+    .hero-btn:hover{
+        border: 1px solid  #c7bdbd49;
+        background:  #c7bdbd49;
+        transition: 1s;
+    }
+    @media(max-width:700px){
+     
+        .text-box h1{
+        font-size: 20px;
+    }
+    #checkbtn{
+        display: block;
+    }
+    .nav-links ul{
+        width: 100%;
+        height: 20vh;
+        background-color:#3d1919c5 ;
+        position: fixed;
+        top: 200px;
+        left: -100%;
+        text-align: center;
+        transition: .5s;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+        
+
+    
+     }
+     @media(min-width:701px){
+
+        #checkbtn{
+            display:none ;
+        }
+
+     }
+
+     
+
+
+     label{
+        color: #fff;
+    
+     }
+    #checkbtn{
+        font-size: 30px;
+        
+        
+        
+        
+        
+    }
+    #check{
+        display: none;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    .know-how{
+        color: #fff;
+    }
+
+    .item{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-top: 200px;
+        
+        
+    }
+    .item h1{
+        font-size: 30px;
+        font-weight: 600;
+        color: #fff;
+        
+    }
+    .item p{
+        color: #fff;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 22px;
+        padding: 10px;
+         }
+
+        .row{
+            margin-top: 5%;
+            display: flex;
+            justify-content: space-between;
+
+        }
+        .product-col{
+            flex-basis: 31%;
+            background:#c7bdbd49 ;
+            border-radius: 10px;
+            margin-bottom: 5%;
+            padding: 20px 12px;
+            box-sizing:border-box ;
+            
+        }
+        h3{
+            text-align: center;
+            font-weight: 600;
+            margin: 10px 0;
+        }
+        @media(max-width:895px){
+            .row{
+                flex-direction: column;
+            }
+        }
+        
+
+        .term{
+        width: 80%;
+        margin: auto;
+        text-align: center;
+        padding-top: 130px;
+        
+        
+    }
+    .term h1{
+        font-size: 36px;
+        font-weight: 600;
+        color: #fff;
+        
+    }
+    
+
+        .row{
+            margin-top: 5%;
+            display: flex;
+            justify-content: space-between;
+
+        }
+        .pro-col{
+            flex-basis: 31%;
+            
+            border-radius: 10px;
+            
+            padding: 20px 12px;
+            box-sizing:border-box ;
+
+            
+        }
+        
+        
+        @media(max-width:895px){
+            .row{
+                flex-direction: column;
+            }
+        }  
+        
+.test{
+    width: 80%;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+}
+.test-col{
+    flex-basis: 44%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+    background: #f3f0f096;
+    padding: 25px;
+    cursor: pointer;
+    display: flex;
+
+}
+.test-col img{
+    height: 40px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+
+}
+.test-col p{
+    padding: 0;
+}
+.test-col h3{
+    margin-top: 15px;
+    text-align: left;
+}
+
+.test h1{
+    color: #fff;
+    font-size: 27px;
+}
+.test-col i{
+    color: #bba527ee;
+}
+
+form{
+    text-align: center;
+    
+    
+}
+input{
+    background-color:#d6cbcbda ;
+    size: 12px;
+    
+}
+button{
+
+    
+padding: 2px 85px;
+font-size: 16px;
+cursor: pointer;
+
+}
+h5{
+    color: #fff;
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 29px;
+}
+select{
+    background-color:#d6cbcbda;
+}
+textarea{
+    background-color: #d6cbcbda;
+}
+
+
+.her-btn{
+        display: inline-block ;
+        text-decoration: none;
+        color: #fff;
+        border: 1px solid #fff;
+        padding: 10px 34px;
+        font-size: 23px;
+        background: transparent;
+        position: relative;
+        cursor: pointer;
+        
+    }
+    .her-btn:hover{
+        border: 1px solid  #c7bdbd49;
+        background:  #c7bdbd49;
+        transition: 1s;
+    }
+    .here{
+        text-align: center;
+    }
+    
+    
+footer{
+    text-align: center;
+    background: #726f6f;
+
+    }
+.tool a{
+    color: #0c0a0a;
+    font-size: 16px;
+
+}
+
+.group img{
+    height: 45px;
+    margin-left: 5px;
+    margin-right: 30px;
+    border-radius: 50%;
+    
+
+}
+.group{
+    text-align: center;
+    margin-right: -20px;
+    padding-bottom: 20px;
+}
+
+.text-box{
+    text-align: left;
+}
+.vid{
+    text-align: center;
+    padding-top: 20px;
+    
+    
+    
+    
+
+}
+
+ @media(max-width:895px){
+            video{
+                text-align:left;
+                padding-top: 110px;
+            }
+        } 
+        
+        
+        @media(max-width:688px){
+
+            footer{
+                font-size: 4px;
+        }
+    }
+
+    @media(max-width:600px){
+
+        .term{
+            margin-left: 30px;
+        }
+    }
+
+@media(max-width:600px){
+
+    form{
+        margin-left: -20px;
+    }
+}
+</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+</head>
+<body>
+    
+    
+    <section class="header">
+        
+       
+        <nav>
+            
+            </label>
+
+            <a href="index.html"><img src="image/pop.jpg" ></a>
+            <div class="nav-links">
+
+                <input type="checkbox" id="check" name="" value="">
+                <label for="check" id="checkbtn"><i class="fa fa-bars"></i></label>
+                
+                
+                <ul>
+                    
+                    
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT</a></li>
+                    <li><a href="">PRODUCT</a></li>
+                    <li><a href="">CONTACT</a></li>
+                    
+                </ul>
+            </div>
+                       
+        </nav>
+
+        <div class="text-box">
+            <h1>MOHIB KHAN</h1>
+
+            <h2>BEST COLLECTION EVER</h2>
+            <p>IT'S OUR RESPONSIBILITY TO PROVIDE BEST QUALITY PRODUCTS <br> ALL OVER PAKISTAN AND MAKE OUR PRODUCT POPULAR</p>
+            <a href="" class="hero-btn" >VISIT US TO KNOW MORE</a>
+        </div>
+
+
+    </section>
+    <section class="vid">
+
+    <div class="zedio">
+
+        <video autoplay="" loop="" muted=""> 
+            <source src="image/video.mp4">
+
+        </video>
+
+    </div>
+    </section>
+
+    <section class="term">
+
+        <h1>PRODUCTS</h1>
+        <div class="row">
+
+
+            <div class="pro-col">
+
+                <img src="image/shoes.png" >
+
+            </div>
+
+            <div class="pro-col">
+
+                <img src="image/shirts.webp">
+
+
+                </div>
+
+            <div class="pro-col">
+                <img src="image/images.png" width="420" height="330">
+
+
+              </div>
+
+        </div>
+
+    </section>
+
+    
+    <section class="item">
+
+        <h1>OUR EXPERIENCE</h1>
+        <P>FOLLOWING ARE THE THOUGHTS</P>
+
+        <div class="row">
+
+
+            <div class="product-col">
+
+
+                <h3>ATTRACTIVE</h3>
+                <P>Attractive and unique ecommerce website design has always played a key role in a successful online sales and marketing strategy.</P>
+            </div>
+
+            <div class="product-col">
+
+
+                <h3>VISITORS</h3>
+                <P>In fact, studies have shown that it takes 50 milliseconds for visitors to decide if they’ll stay on an ecommerce site or not. You get only an instant to impress users.</P>
+            </div>
+            <div class="product-col">
+
+
+                <h3>GUIDE</h3>
+                <P> This guide is for you. Browse examples of great ecommerce websites, tips for choosing the right ecommerce platform, and advice to get your online business looking its best.</P>
+            </div>
+
+        </div>
+
+
+
+    </section>
+    
+
+
+
+<h5>PAYMENT HERE</h5>
+
+
+
+
+
+
+<form>
+   
+    <label for="fname">Enter Your First Name<strong>:</strong></label>
+   <br>
+   <input type="text" name="text" id="text" size="60" >
+   <br><br>
+   <label>Entetr Your Last Name<strong>:</strong></label>
+    
+    <br>
+    <input type="text" id="lname" name="lname" size="60" >
+    <br><br>
+    <label>Enter Your Email<strong>:</strong></label>
+    <br>
+    <input type="email" id="email" name="email" required size="60" >
+    <br><br>
+    <label>Enter Password<strong>:</strong></label>
+    <br>
+    <input type="password" id="password" name="password" required size="60">
+    <br><br>
+
+    <label>Product Name<strong>:</strong></label>
+    <br>
+    <input type="text" id="text" name="text" required size="60">
+    <br>
+    
+    </div>
+    <br>
+    <label>SELECT YOUR BANK</label>
+    <br>
+
+    <Select >
+     <option value="Select">(Select one)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </option>
+     <option value="10">HBL</option>
+     <option value="20">BML</option>
+     <option value="30">MEZAN</option>
+    </Select>
+    
+        
+            <br><br>
+            <label>Insert AMOUNT<strong>:</strong></label>
+            <br>
+            <input type="password" name="number" id="number" size="60" >
+               <br><br>
+               <label>How did you hear about us?</label>
+               <br>
+
+               <Select >
+                <option value="Select">(Select one)&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                       </option>
+                <option value="10">FRIEND</option>
+                <option value="20">SOCIAL MEDIA</option>
+                <option value="30">RELATIVES</option>
+               </Select>
+
+               <br><br>
+            <label>Your Review<strong>:</strong></label>
+            <br>
+            <textarea name="text" id="text" cols="60" rows="2" placeholder="WE WILL APRICIATE YOUR REVIEW..... "></textarea>
+
+            <br><br><br>
+            
+            
+            <button type="submit" class="block">Submit</button>
+            <br><br>
+  </form>
+  
+
+
+  <section class="test">
+
+    <h1>BEST REVIEWS</h1>
+
+    <div class="row">
+        <div class="test-col">
+            <img src="image/gg.jpeg" >
+            <div>
+                <p>This web site is so good and there producks are original and dilivery is 100 out of 100.</p>
+                <h3>SOFIA MALIK</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+        </div>
+        <div class="test-col">
+            <img src="image/yy.jpeg" >
+            <div>
+                <p>This web site is so good and there producks are original and dilivery is 100 out of 100.</p>
+                <h3>ALEX HALES</h3>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+            </div>
+        </div>
+    </div>
+
+
+
+</section>
+<section class="here">
+<a href="" class="her-btn" >CONTACT US</a>
+    
+</section><br><br>
+
+<div class="group">
+    <img src="image/ins.jpg">
+    <img src="image/Face.png">
+    <img src="image/twi.png">
+    </div>
+
+
+
+<section class="tool">
+<fieldset>
+    
+    <footer>    
+       
+    
+        <a href="#">FAQ</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#">CONTACT US</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#">TERMS</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#">PRIVACY POLICY</a>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="#">&COPY;2024 / PAYPRO</a> 
+        
+        </footer>
+        </fieldset>
+
+</section>
+
+
+</body>
+</html>
